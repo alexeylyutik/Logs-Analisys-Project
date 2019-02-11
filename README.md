@@ -79,7 +79,7 @@ psql -d news -f newsdata.sql
 ```
 2. Run Python file
 ```cmd 
-$ python3 logAnalysis.py 
+$ python3 LogAnalysis.py 
 ```
 
 
