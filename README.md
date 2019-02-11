@@ -34,7 +34,7 @@ This shows one of the valuable roles of a database server in a real-world applic
 * Python  3.5.2
 * Postgresql 9.5.12
 
-## Suggested Setup
+## Setup
 
 ### Virtual Machine with Vagrant
 ***Requirements***
@@ -64,11 +64,11 @@ To log into the VM, use a terminal in that same directory and run the following 
 
 In this shell, if you change directory to /vagrant and run *ls* there, you will see the Vagrantfile you downloaded ... and any other files you put into that directory from your computer, that will be the shared folder between VM and your computer.
 
-### Logged in!
+### Now you Logged in!
 If you are now looking at a shell prompt that starts with the word vagrant ex ```vagrant@vagrant:/vagrant$```, congratulations — you've gotten logged into your Linux VM.
 
 
-## How to execute
+## How to execute program
 1. Unzip the sql file.
 ```cmd
 $ unzip archive.zip
