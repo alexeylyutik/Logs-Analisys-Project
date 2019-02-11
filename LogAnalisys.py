@@ -5,7 +5,7 @@ import psycopg2
 
 
 def main():
-    # Connect to Database & create cursor to query DB.
+    # Connect to Database and create cursor to query DB.
     dbConnection = psycopg2.connect("dbname=news")
     dbCursor = dbConnection.cursor()
 
@@ -29,8 +29,8 @@ def main():
 
     # 2. Who are the most popular article authors of all time?
     # Join articles,log and authors tables
-    # count appearance of authors.name
-    # when author id's match and website was visited
+    # Count appearance of authors.name
+    # When author id match and website was visited
     sqlMostPopularAuthors = """
         select authors.name, count(*) as views
             from articles, authors, log
