@@ -45,7 +45,7 @@ def main():
 
     print("")
 
-    # Create a view for all the times an error occured in a particular day
+    # View for all the times an error occured in a particular day
     errorsTable = """
         create view errorsTable as
             select date(time), count(*) as errorCount
@@ -54,7 +54,7 @@ def main():
                 group by date(time)
                 order by date(time)
     """
-    # Create a view for all the views that were attempted in each day
+    # View for all the views that were attempted in each day
     viewsTable = """
         create view viewsTable as
             select date(time), count(*) as viewCount
@@ -65,7 +65,7 @@ def main():
     dbCursor.execute(errorsTable)
     dbCursor.execute(viewsTable)
 
-    # Create a table of the percentage of errors that occurred in each day
+    # Table of the percentage of errors that occurred in each day
     errorPercent = """
         create view errorPercent as
             select viewsTable.date,
